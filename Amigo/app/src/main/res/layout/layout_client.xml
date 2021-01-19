@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#E7E4E4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="12dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@raw/user_icon"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="[value]"
+                android:id="@+id/client_LNameTXTVW"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="[value]"
+                android:id="@+id/client_FMNameTXTVW"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:text="Log Out"
+                android:id="@+id/client_LogOutBTTN"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:id="@+id/buyLNRLYT">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_productNameTXTVW"
+            android:text="Product Name:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_CostTXTVW"
+            android:text="Cost:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_ShippingTXTVW"
+            android:text="Shipping:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="22dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_AddressDTTX"
+            android:hint="address"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="text"
+            android:textSize="22sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_QuantityDTTX"
+            android:hint="quantity"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_CardNumberDTTX"
+            android:hint="card#"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_ExpirationDTTX"
+            android:hint="expiration"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_CVVDTTX"
+            android:hint="cvv"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:textSize="22sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Buy"
+            android:id="@+id/client_BuyBTTN"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="18dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/client_product1LNRLYT">
+
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:src="@raw/product"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[value]"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:id="@+id/client_product1TXTVW"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/client_product2LNRLYT">
+
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:src="@raw/product"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[value]"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:id="@+id/client_product2TXTVW"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/client_product3LNRLYT">
+
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:src="@raw/product"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[value]"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:id="@+id/client_product3TXTVW"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/client_product4LNRLYT">
+
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:src="@raw/product"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[value]"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:id="@+id/client_product4TXTVW"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/client_product5LNRLYT">
+
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:src="@raw/product"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[value]"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:id="@+id/client_product5TXTVW"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
